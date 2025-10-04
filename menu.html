@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Pastry Palace</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff5e1;
+      color: #4b2e05;
+    }
+
+    header, footer {
+      background-color: #d4a373;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #b07a3f;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff5e1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffeccc;
+    }
+
+    section {
+      padding: 40px 10%;
+      text-align: center;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: left;
+    }
+
+    .menu-category {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .menu-category h3 {
+      text-align: center;
+      background-color: #d4a373;
+      border-radius: 8px;
+      color: white;
+      padding: 8px 0;
+    }
+
+    .menu-category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-category li {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px dashed #d4a373;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Pastry Palace Bakery</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-category">
+        <h3>Breads</h3>
+        <ul>
+          <li><span>Country Loaf</span><span>₱15.25</span></li>
+          <li><span>Baguette</span><span>₱13.50</span></li>
+          <li><span>Seeded Wheat Stalk</span><span>₱14.25</span></li>
+          <li><span>Brioche</span><span>₱12.50</span></li>
+          <li><span>Holiday Rolls</span><span>₱10.50</span></li>
+          <li><span>Cinnamon Swirl Loaf</span><span>₱13.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Cookies</h3>
+        <ul>
+          <li><span>Butter Cookies</span><span>₱4.25</span></li>
+          <li><span>Rugulah</span><span>₱4.95</span></li>
+          <li><span>Macaroons</span><span>₱4.25</span></li>
+          <li><span>Energy Bars</span><span>₱4.25</span></li>
+          <li><span>Chocolate Chip</span><span>₱1.75</span></li>
+          <li><span>Pumpkin Oatmeal</span><span>₱1.75</span></li>
+          <li><span>Black & White Cookie</span><span>₱1.55</span></li>
+          <li><span>Almond Cookies</span><span>₱5.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Pastries</h3>
+        <ul>
+          <li><span>Key Lime Curd</span><span>₱4.25</span></li>
+          <li><span>Lemon Curd</span><span>₱4.25</span></li>
+          <li><span>Rice Pudding</span><span>₱4.95</span></li>
+          <li><span>Tiramisu Cup</span><span>₱5.25</span></li>
+          <li><span>French Macaroons</span><span>₱5.75</span></li>
+          <li><span>Creme Brulee</span><span>₱5.25</span></li>
+          <li><span>Coconut Macarons</span><span>₱1.55</span></li>
+          <li><span>Mini Cheesecake</span><span>₱5.50</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Pastry Palace Bakery | Baked with ♥ in Bacoor</p>
+  </footer>
+
+</body>
+</html>
