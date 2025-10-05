@@ -46,6 +46,27 @@
     section {
       padding: 40px 10%;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Side images */
+    .side-image {
+      position: absolute;
+      top: 0;
+      width: 260px;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.25;
+      z-index: -1;
+    }
+
+    .left-side {
+      left: 0;
+    }
+
+    .right-side {
+      right: 0;
     }
 
     .menu-grid {
@@ -53,6 +74,8 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       text-align: left;
+      z-index: 2;
+      position: relative;
     }
 
     .menu-category {
@@ -98,64 +121,65 @@
   </nav>
 
   <section>
+    <!-- Side design images -->
+    <img src="081555ce-2ef2-4979-8874-faf2794211ac.png" alt="Bakery Display Left" class="side-image left-side">
+    <img src="5266934e-65ae-4896-9c03-e62f7e62f8ae.png" alt="Bakery Display Right" class="side-image right-side">
+
     <h2>Our Menu</h2>
     <div class="menu-grid">
-
       <div class="menu-category">
         <h3>Breads</h3>
         <ul>
           <li><span>Country Loaf</span><span>₱150.25</span></li>
-          <li><span>Baguette</span><span>₱132.50</span></li>
-          <li><span>Seeded Wheat Stalk</span><span>₱119.00</span></li>
-          <li><span>Brioche</span><span>₱189.50</span></li>
-          <li><span>Holiday Rolls</span><span>₱90.50</span></li>
-          <li><span>Cinnamon Swirl Loaf</span><span>₱150.50</span></li>
+          <li><span>Baguette</span><span>₱130.50</span></li>
+          <li><span>Seeded Wheat Stalk</span><span>₱140.25</span></li>
+          <li><span>Brioche</span><span>₱120.50</span></li>
+          <li><span>Holiday Rolls</span><span>₱120.50</span></li>
+          <li><span>Cinnamon Swirl Loaf</span><span>₱130.50</span></li>
         </ul>
       </div>
 
       <div class="menu-category">
         <h3>Cookies</h3>
         <ul>
-          <li><span>Butter Cookies</span><span>₱60.00</span></li>
+          <li><span>Butter Cookies</span><span>₱69.25</span></li>
           <li><span>Rugulah</span><span>₱60.00</span></li>
-          <li><span>Macaroons</span><span>₱65.00</span></li>
-          <li><span>Energy Bars</span><span>₱75.00</span></li>
-          <li><span>Chocolate Chip</span><span>₱60.00</span></li>
-          <li><span>Pumpkin Oatmeal</span><span>₱65.00</span></li>
-          <li><span>Black & White Cookie</span><span>₱70.00</span></li>
-          <li><span>Almond Cookies</span><span>₱80.00</span></li>
+          <li><span>Macaroons</span><span>₱46.25</span></li>
+          <li><span>Energy Bars</span><span>₱67.25</span></li>
+          <li><span>Chocolate Chip</span><span>₱70.75</span></li>
+          <li><span>Pumpkin Oatmeal</span><span>₱50.75</span></li>
+          <li><span>Black & White Cookie</span><span>₱59.55</span></li>
+          <li><span>Almond Cookies</span><span>₱50.50</span></li>
         </ul>
       </div>
 
       <div class="menu-category">
         <h3>Pastries</h3>
         <ul>
-          <li><span>Key Lime Curd</span><span>₱230.00</span></li>
-          <li><span>Lemon Curd</span><span>₱220.00</span></li>
-          <li><span>Rice Pudding</span><span>₱175.00</span></li>
-          <li><span>Tiramisu Cup</span><span>₱230.00</span></li>
-          <li><span>French Macaroons</span><span>₱80.75</span></li>
-          <li><span>Creme Brulee</span><span>₱2600.25</span></li>
-          <li><span>Coconut Macarons</span><span>₱90.55</span></li>
-          <li><span>Mini Cheesecake</span><span>₱240.50</span></li>
+          <li><span>Key Lime Curd</span><span>₱49.25</span></li>
+          <li><span>Lemon Curd</span><span>₱46.25</span></li>
+          <li><span>Rice Pudding</span><span>₱48.95</span></li>
+          <li><span>Tiramisu Cup</span><span>₱120.00</span></li>
+          <li><span>French Macaroons</span><span>₱85.75</span></li>
+          <li><span>Creme Brulee</span><span>₱90.25</span></li>
+          <li><span>Coconut Macarons</span><span>₱70.55</span></li>
+          <li><span>Mini Cheesecake</span><span>₱74.50</span></li>
         </ul>
       </div>
 
-      <!-- ☕ New Beverages Section -->
       <div class="menu-category">
         <h3>Beverages</h3>
         <ul>
-          <li><span>Freshly Brewed Coffee</span><span>₱85.00</span></li>
-          <li><span>Cappuccino</span><span>₱110.00</span></li>
-          <li><span>Latte</span><span>₱120.00</span></li>
-          <li><span>Hot Chocolate</span><span>₱95.00</span></li>
-          <li><span>Caramel Macchiato</span><span>₱125.00</span></li>
-          <li><span>Classic Milk Tea</span><span>₱90.00</span></li>
-          <li><span>Iced Americano</span><span>₱100.00</span></li>
-          <li><span>Fresh Lemon Juice</span><span>₱75.00</span></li>
+          <li><span>Hot Coffee</span><span>₱80.00</span></li>
+          <li><span>Iced Coffee</span><span>₱95.00</span></li>
+          <li><span>Hot Chocolate</span><span>₱85.00</span></li>
+          <li><span>Milk Tea</span><span>₱110.00</span></li>
+          <li><span>Fruit Smoothie</span><span>₱120.00</span></li>
+          <li><span>Fresh Lemonade</span><span>₱70.00</span></li>
+          <li><span>Cappuccino</span><span>₱120.00</span></li>
+          <li><span>Latte</span><span>₱115.00</span></li>
         </ul>
       </div>
-
     </div>
   </section>
 
@@ -165,5 +189,3 @@
 
 </body>
 </html>
-
-
