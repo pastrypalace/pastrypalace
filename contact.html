@@ -10,6 +10,7 @@
       margin: 0;
       background-color: #fff5e1;
       color: #4b2e05;
+      background-image: radial-gradient(circle at top left, #fff2d5 0%, #fff5e1 70%);
     }
 
     header, footer {
@@ -24,6 +25,7 @@
       margin: 0;
       font-size: 2.5em;
     }
+
     nav {
       background-color: #b07a3f;
       display: flex;
@@ -36,23 +38,138 @@
       color: #fff5e1;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #ffeccc;
     }
 
+    /* ===== Contact Section ===== */
     section {
       text-align: center;
-      padding: 50px 10%;
+      padding: 60px 10%;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #b07a3f;
+      margin-bottom: 20px;
     }
 
     .info {
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
       display: inline-block;
+      text-align: left;
+      max-width: 500px;
+      line-height: 1.8;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .info p {
+      font-size: 1.05em;
+      margin: 10px 0;
+    }
+
+    /* ===== Contact Form ===== */
+    .contact-form {
+      margin-top: 50px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+      color: #4b2e05;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #d4a373;
+      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+      resize: none;
+    }
+
+    .contact-form button {
+      background-color: #b07a3f;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #a06933;
+      transform: scale(1.05);
+    }
+
+    /* ===== Map Section ===== */
+    .map {
+      margin-top: 60px;
+      background: #d4a373;
+      color: white;
+      padding: 50px 10%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .map h3 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .map p {
+      font-size: 1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #d4a373;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    /* ===== Animation ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .info, .contact-form {
+        width: 100%;
+      }
+      .map {
+        border-radius: 0;
+      }
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -79,6 +196,27 @@
       <p><strong>📘 Facebook:</strong> Pastry Palace Bakery</p>
       <p><strong>🎵 TikTok:</strong> @pastrypalace</p>
       <p><strong>📸 Instagram:</strong> pastrypalaceph</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <h3>Visit Us</h3>
+      <p>We’re located at SM Bacoor, Brgy. Habay II — drop by for a warm pastry and a smile! 🍞☕</p>
     </div>
   </section>
 
