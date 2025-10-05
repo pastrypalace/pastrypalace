@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pastry Palace Bakery</title>
   <style>
-    /* ----- Base Styles ----- */
+    /* ===== Base Styles ===== */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       background-color: #fff5e1;
       color: #4b2e05;
-      overflow-x: hidden;
     }
 
     header {
@@ -29,21 +28,21 @@
     }
 
     header p {
-      font-size: 1.1em;
       margin-top: 5px;
+      font-size: 1.1em;
     }
 
-    /* ----- Navigation ----- */
+    /* ===== Navigation ===== */
     nav {
       background-color: #b07a3f;
       display: flex;
       justify-content: center;
       gap: 25px;
       padding: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 10;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
 
     nav a {
@@ -69,41 +68,18 @@
       width: 100%;
     }
 
-    /* ----- Banner Section ----- */
+    /* ===== Banner ===== */
     .banner {
       width: 100%;
-      height: 420px;
+      height: 400px;
       background-image: url("https://scontent.fmnl13-3.fna.fbcdn.net/v/t1.15752-9/553666260_2356604424772129_5069563036065292946_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEC_0XF9n8qLUt0WPHuomio6WtJo928xEvpa0mj3bzES2TmJ27LnLcE7D90J7V24TodladQzcY08vmLd54JDZ54&_nc_ohc=IkZUzbmPejcQ7kNvwHzBxBd&_nc_oc=AdnbtrLW3iDVqIwkENGSlhWTMbPZPN-tJNr36uE2c4WA56s4cr7tKBgScknaK33bOR8&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&oh=03_Q7cD3gHHi__-CVdg9-tux8xH98lLrnpbERdaiz3qBb7CH-bpdQ&oe=69097095");
-      background-size: cover;
+      background-size: contain;
       background-position: center;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+      background-repeat: no-repeat;
+      background-color: #fff5e1;
     }
 
-    .banner::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.3);
-    }
-
-    .banner-text {
-      position: relative;
-      z-index: 1;
-      font-size: 2em;
-      background-color: rgba(255,255,255,0.2);
-      padding: 15px 25px;
-      border-radius: 15px;
-      backdrop-filter: blur(4px);
-    }
-
-    /* ----- Welcome Section ----- */
+    /* ===== Welcome Section ===== */
     section {
       text-align: center;
       padding: 60px 10%;
@@ -127,13 +103,36 @@
       left: 20%;
     }
 
-    /* ----- Featured Items ----- */
+    section p {
+      font-size: 1.05em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    /* ===== Button ===== */
+    .btn {
+      display: inline-block;
+      background-color: #b07a3f;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #8c5e2a;
+      transform: scale(1.05);
+    }
+
+    /* ===== Featured Items ===== */
     .featured {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .card {
@@ -165,22 +164,7 @@
       padding: 0 10px 15px;
     }
 
-    /* ----- Button ----- */
-    .btn {
-      display: inline-block;
-      background-color: #b07a3f;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #8c5e2a;
-    }
-
-    /* ----- Footer ----- */
+    /* ===== Footer ===== */
     footer {
       background-color: #d4a373;
       text-align: center;
@@ -189,11 +173,28 @@
       font-size: 0.9em;
       margin-top: 40px;
     }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .featured {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
+    }
   </style>
+
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <h1>Pastry Palace Bakery</h1>
     <p>Freshly baked happiness, every day!</p>
@@ -206,9 +207,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="banner">
-    <div class="banner-text">Delight in Every Bite</div>
-  </div>
+  <div class="banner"></div>
 
   <section>
     <h2>Welcome to Pastry Palace</h2>
@@ -221,11 +220,13 @@
         <h3>Classic Butter Croissant</h3>
         <p>Flaky, golden, and irresistibly buttery — the perfect start to your morning.</p>
       </div>
+
       <div class="card">
         <img src="https://i.pinimg.com/736x/2c/f4/fc/2cf4fc89a1dd37ebcd2767cb3d7d8bc5.jpg" alt="Chocolate Cake">
         <h3>Chocolate Dream Cake</h3>
         <p>Rich chocolate layers topped with creamy ganache — a true indulgence.</p>
       </div>
+
       <div class="card">
         <img src="https://i.pinimg.com/736x/31/d3/a0/31d3a04886b4f1b73d06f8ee38bbbe5a.jpg" alt="Macarons">
         <h3>Colorful Macarons</h3>
@@ -237,6 +238,5 @@
   <footer>
     <p>© 2025 Pastry Palace Bakery | Baked with ♥ in Bacoor</p>
   </footer>
-
 </body>
 </html>
