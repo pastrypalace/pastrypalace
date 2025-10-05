@@ -115,25 +115,14 @@
       margin-top: 40px;
     }
 
-    /* 📱 MOBILE FRIENDLY SECTION */
+    /* 📱 MOBILE FRIENDLY SECTION (nav unchanged) */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8em;
       }
 
-      nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 0;
-      }
-
-      nav a {
-        display: block;
-        padding: 8px 0;
-      }
-
       section {
-        padding: 20px 5%;
+        padding: 25px 5%;
       }
 
       .menu-grid {
@@ -145,8 +134,16 @@
         padding: 15px;
       }
 
+      .menu-category h3 {
+        font-size: 1.2em;
+      }
+
+      .menu-category li {
+        font-size: 0.95em;
+      }
+
       .side-image {
-        display: none; /* Hide side pictures on small screens for better readability */
+        display: none; /* hide background pics for better readability */
       }
 
       footer {
