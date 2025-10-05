@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Pastry Palace</title>
+  <title>Reviews - Pastry Palace</title>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       background-color: #fff5e1;
       color: #4b2e05;
-      background-image: radial-gradient(circle at top left, #fff2d5 0%, #fff5e1 70%);
     }
 
     header, footer {
@@ -45,23 +44,121 @@
       color: #ffeccc;
     }
 
-    /* ===== Contact Section ===== */
     section {
       text-align: center;
-      padding: 60px 10%;
-      animation: fadeIn 1.2s ease-in;
-    }
-
-    section h2 {
-      font-size: 2em;
-      color: #b07a3f;
-      margin-bottom: 20px;
+      padding: 50px 10%;
     }
 
     .info {
       background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .review-card {
+      background-color: #fffdf8;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .review-card h3 {
+      margin-top: 0;
+      color: #b07a3f;
+    }
+
+    .stars {
+      color: #f5a623;
+      font-size: 1.1em;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .reviews {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Pastry Palace Bakery</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Reviews</a>
+  </nav>
+
+  <section>
+    <h2>Our Location</h2>
+    <div class="info">
+      <p><strong>📍 Address:</strong> SM Bacoor, Brgy. Habay II, City of Bacoor</p>
+      <p><strong>📞 Phone:</strong> 0938-448-4361</p>
+      <p><strong>📧 Email:</strong> pastrypalace454@gmail.com</p>
+      <p><strong>📘 Facebook:</strong> Pastry Palace Bakery</p>
+      <p><strong>📸 Instagram:</strong> @pastrypalaceph</p>
+      <p><strong>🎵 TikTok:</strong> @pastrypalace</p>
+    </div>
+
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+      <div class="review-card">
+        <h3>✨ Maria L.</h3>
+        <p class="stars">★★★★★</p>
+        <p>“The best pastries I’ve ever had! Their croissants are so buttery and soft — totally worth it!”</p>
+      </div>
+
+      <div class="review-card">
+        <h3>🍰 John P.</h3>
+        <p class="stars">★★★★☆</p>
+        <p>“Beautiful cakes and friendly staff! The chocolate mousse cake was heavenly.”</p>
+      </div>
+
+      <div class="review-card">
+        <h3>☕ Andrea R.</h3>
+        <p class="stars">★★★★★</p>
+        <p>“Perfect spot for coffee and dessert dates. Cozy vibes and great service!”</p>
+      </div>
+
+      <div class="review-card">
+        <h3>🧁 Carlo D.</h3>
+        <p class="stars">★★★★★</p>
+        <p>“Love how fresh everything tastes. I come here every weekend — must-try bakery in Bacoor!”</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Pastry Palace Bakery | Baked with ♥ in Bacoor</p>
+  </footer>
+
+</body>
+</html>
       padding: 30px;
       display: inline-block;
       text-align: left;
@@ -226,3 +323,4 @@
 
 </body>
 </html>
+
