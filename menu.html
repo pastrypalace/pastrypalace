@@ -37,6 +37,7 @@
       color: #fff5e1;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
@@ -59,6 +60,7 @@
       object-fit: cover;
       opacity: 0.55;
       z-index: -1;
+      transition: opacity 0.3s ease;
     }
 
     .left-side {
@@ -104,7 +106,56 @@
       padding: 5px 0;
       border-bottom: 1px dashed #d4a373;
     }
+
+    footer {
+      background-color: #d4a373;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    /* 📱 MOBILE FRIENDLY SECTION */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+      }
+
+      nav a {
+        display: block;
+        padding: 8px 0;
+      }
+
+      section {
+        padding: 20px 5%;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .menu-category {
+        padding: 15px;
+      }
+
+      .side-image {
+        display: none; /* Hide side pictures on small screens for better readability */
+      }
+
+      footer {
+        font-size: 0.9em;
+        padding: 15px 0;
+      }
+    }
   </style>
+
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
