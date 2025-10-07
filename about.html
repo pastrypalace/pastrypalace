@@ -14,10 +14,24 @@
     }
 
     header {
-      background-color: #d4a373;
-      color: white;
+      position: relative;
       text-align: center;
-      padding: 40px 0;
+      padding: 60px 0;
+      color: white;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://scontent.fmnl13-4.fna.fbcdn.net/v/t1.15752-9/553512224_24983343781296232_3238944312266958588_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG8IuA_TxxY9LV1ofwfZMJLYeK7-nFyRWRh4rv6cXJFZKCbnOsZO0H1JpuEicOanGWMWTMJdZgcU-XsjrmUrIT6&_nc_ohc=yMnfAm3PtbkQ7kNvwEBAqu2&_nc_oc=AdlJX0fxR3zhLl4R0q6axPmEvBXXYsgVVihQJoCC_D0Xtom1RB3do_FX5u2cEs3IjiI&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&oh=03_Q7cD3gEVzvdUkv_hMrmyXPkMSQkF8_y0yVx4U7R47g9MQtDfrg&oe=690BE9A4");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.5);
+      z-index: -1;
     }
 
     header h1 {
@@ -138,6 +152,7 @@
         padding: 15px 0;
       }
     }
+
   </style>
 
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -171,6 +186,8 @@
 
 </body>
 </html>
+
+
 
 
 
