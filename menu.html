@@ -12,33 +12,34 @@
       color: #4b2e05;
     }
 
-  header {
-  position: relative;
-  color: white;
-  text-align: center;
-  padding: 25px 0;
-  overflow: hidden;
-  font-family: 'Pacifico', cursive;
-}
+    /* 🧁 Updated header with background image */
+    header {
+      position: relative;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      overflow: hidden;
+      font-family: 'Pacifico', cursive;
+    }
 
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("https://i.pinimg.com/736x/ba/1a/b9/ba1ab9fa8bb04e47f22a1815d5f72665.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.5);
-  z-index: -1;
-}
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://scontent.fmnl13-4.fna.fbcdn.net/v/t1.15752-9/553512224_24983343781296232_3238944312266958588_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG8IuA_TxxY9LV1ofwfZMJLYeK7-nFyRWRh4rv6cXJFZKCbnOsZO0H1JpuEicOanGWMWTMJdZgcU-XsjrmUrIT6&_nc_ohc=yMnfAm3PtbkQ7kNvwEBAqu2&_nc_oc=AdlJX0fxR3zhLl4R0q6axPmEvBXXYsgVVihQJoCC_D0Xtom1RB3do_FX5u2cEs3IjiI&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&oh=03_Q7cD3gEVzvdUkv_hMrmyXPkMSQkF8_y0yVx4U7R47g9MQtDfrg&oe=690BE9A4g");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.5); 
+      z-index: -1;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  position: relative;
-  z-index: 1;
-}
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      position: relative;
+      z-index: 1;
+    }
 
     nav {
       background-color: #b07a3f;
@@ -66,6 +67,7 @@ header h1 {
       overflow: hidden;
     }
 
+    
     .side-image {
       position: absolute;
       top: 0;
@@ -129,6 +131,7 @@ header h1 {
       margin-top: 40px;
     }
 
+    /* 📱 MOBILE FRIENDLY SECTION (nav unchanged) */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8em;
@@ -183,7 +186,7 @@ header h1 {
   </nav>
 
   <section>
-    
+
     <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t1.15752-9/553856518_808349511735445_6333585855444951381_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGFqGDKgGTeGcSIZ8KbyvzbyKxqQEmS6n3IrGpASZLqfZyzRcjr-M_M544yjL1m73018gj2hh5gaMGg7_7I3CHb&_nc_ohc=XjmeFLFuHGoQ7kNvwH9uBHf&_nc_oc=Adnxr0tQZ7I0hTgmaHvq06rIBfPJsPl3D7oLNoRZwPBZdlxq_Kna_s5WmgnS478s1Ho&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&oh=03_Q7cD3gFxmpT7c0exToA-JxIO66iBEMppMSZqytBvHFSCOS9kZw&oe=69097DA4" alt="Bakery Display Left" class="side-image left-side">
     <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/554054733_780132328144649_5913814472622082043_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGUK9HZt0143xePsl1UGT-uNtPhN5yvy7c20-E3nK_LtyC18gsklA4vD7lnFHw6-M1Wr6MDlpR9VyPWUnPmgPJ8&_nc_ohc=GjqJfVgg-VoQ7kNvwFqq425&_nc_oc=AdmaxzUr9FK8hPYn7MI9peajI0Rbrxm_SIBNMK3iXG-1jkn0m2stdCilKy25u-gJTWI&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&oh=03_Q7cD3gEiWjEedhulTy3rRbpLW1levFKdv3JJbXvRs1ETfod4JA&oe=69097487" alt="Bakery Display Right" class="side-image right-side">
 
