@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Pastry Palace</title>
   <style>
+
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -12,13 +13,13 @@
       color: #4b2e05;
     }
 
-    header, footer {
+    header {
       background-color: #d4a373;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 0;
     }
-    
+
     header h1 {
       font-family: 'Pacifico', cursive;
       margin: 0;
@@ -29,8 +30,19 @@
       background-color: #b07a3f;
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 25px;
-      padding: 10px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+    }
+
+    nav::-webkit-scrollbar {
+      display: none; 
     }
 
     nav a {
@@ -38,10 +50,23 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      position: relative;
+      white-space: nowrap; 
     }
 
-    nav a:hover {
-      color: #ffeccc;
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #ffeccc;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     section {
@@ -83,45 +108,36 @@
       text-align: center;
       padding: 20px 0;
       margin-top: 40px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
     }
+
     @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
-  }
+      header h1 {
+        font-size: 1.8em;
+      }
 
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px 0;
-  }
+      section {
+        padding: 40px 5%;
+      }
 
-  nav a {
-    display: block;
-    padding: 8px 0;
-  }
+      section h2 {
+        font-size: 1.6em;
+      }
 
-  section {
-    padding: 40px 5%;
-  }
+      section p {
+        font-size: 1em;
+      }
 
-  section h2 {
-    font-size: 1.6em;
-  }
+      .about-img {
+        width: 100%;
+        border-radius: 10px;
+      }
 
-  section p {
-    font-size: 1em;
-  }
-
-  .about-img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  footer {
-    font-size: 0.9em;
-    padding: 15px 0;
-  }
-
+      footer {
+        font-size: 0.9em;
+        padding: 15px 0;
+      }
+    }
   </style>
 
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -137,14 +153,14 @@
     <a href="about.html">About</a>
     <a href="menu.html">Menu</a>
     <a href="contact.html">Contact</a>
-      <a href="promos.html">Promos & Events</a>
+    <a href="promos.html">Promos & Events</a>
   </nav>
 
   <section>
     <h2>About Us</h2>
     <p>At <strong>Pastry Palace</strong>, we bring a touch of sweetness to everyday life. Our bakery is known for handcrafted pastries, cakes, and desserts made from premium ingredients and baked fresh daily. Each treat is created with care, passion, and a deep love for the art of baking.</p>
 
-    <img class="about-img" src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/553761466_696310530160845_6042325716469155272_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHQdOrywbPw8zZyJwO_C1Kp_5V9d6zAFgr_lX13rMAWCjD0B9SpQAvjv_fEErUt4SWEY2IZg7iRJL9BseOHlDsy&_nc_ohc=HZuHRU4WqSgQ7kNvwGRTqPZ&_nc_oc=AdmoG8n9hPnUTV5wfoiPM1phP2eA03br6aKg15aVplXocU2l0d3mo8E_GK63NbBVDOw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&oh=03_Q7cD3gHjRNj4cXToVO7hzg_aJ5gXdZ_QbPO4iVhZNh0hVZ6hig&oe=6909DF96">
+    <img class="about-img" src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/553761466_696310530160845_6042325716469155272_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHQdOrywbPw8zZyJwO_C1Kp_5V9d6zAFgr_lX13rMAWCjD0B9SpQAvjv_fEErUt4SWEY2IZg7iRJL9BseOHlDsy&_nc_ohc=HZuHRU4WqSgQ7kNvwGRTqPZ&_nc_oc=AdmoG8n9hPnUTV5wfoiPM1phP2eA03br6aKg15aVplXocU2l0d3mo8E_GK63NbBVDOw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&oh=03_Q7cD3gHjRNj4cXToVO7hzg_aJ5gXdZ_QbPO4iVhZNh0hVZ6hig&oe=6909DF96" alt="About Pastry Palace">
 
     <p>From flaky butter croissants to rich chocolate cakes and colorful macarons, every pastry tells a story of quality and creativity. Step inside and enjoy the cozy aroma of freshly baked goodness — a place where every bite feels like home.</p>
   </section>
@@ -155,7 +171,6 @@
 
 </body>
 </html>
-
 
 
 
