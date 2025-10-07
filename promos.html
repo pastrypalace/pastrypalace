@@ -12,17 +12,32 @@
       color: #4b2e05;
     }
 
-    header, footer {
-      background-color: #d4a373;
+    header {
+      background-image: url('https://i.pinimg.com/736x/8d/65/29/8d6529f0d4c9d5e7cbe5d95f8a4d81a5.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 60px 0;
+      position: relative;
     }
-    
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
     header h1 {
       font-family: 'Pacifico', cursive;
       margin: 0;
       font-size: 2.5em;
+      position: relative;
+      z-index: 1;
     }
 
     nav {
@@ -96,10 +111,13 @@
       margin-top: 40px;
     }
 
-    /* Mobile responsive */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8em;
+      }
+
+      header {
+        padding: 40px 0;
       }
 
       section {
@@ -154,13 +172,13 @@
     <div class="event-container">
       <div class="event-card">
         <img src="https://i.pinimg.com/736x/7e/46/31/7e4631a8ec13a8a948fd8697a0a392a1.jpg" alt="Workshop">
-        <h3>haloween siguro</h3>
-        <p>event na gaganapin</p>
+        <h3>Halloween Special</h3>
+        <p>Join our spooky-sweet baking workshop and enjoy themed pastries and fun surprises!</p>
       </div>
       <div class="event-card">
         <img src="https://i.pinimg.com/736x/12/26/5b/12265be580f8c6ac8c244b198c1f7f7e.jpg" alt="suggest">
-        <h3>suggestions</h3>
-        <p>event na gaganapin</p>
+        <h3>Customer Day Celebration</h3>
+        <p>Get free samples, exclusive discounts, and a chance to win a pastry gift box!</p>
       </div>
     </div>
   </section>
@@ -171,7 +189,6 @@
 
 </body>
 </html>
-
 
 
 
